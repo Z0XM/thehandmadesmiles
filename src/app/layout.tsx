@@ -8,7 +8,8 @@ export const metadata: Metadata = {
 };
 
 const appFont = Averia_Serif_Libre({
-	weight: ['300', '400', '700']
+	weight: ['300', '400', '700'],
+	subsets: ['latin']
 });
 
 export default function RootLayout({
