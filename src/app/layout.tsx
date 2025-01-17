@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Averia_Serif_Libre } from 'next/font/google';
 import './globals.css';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
 	title: 'theHandMadeSmiles',
@@ -22,7 +23,10 @@ export default function RootLayout({
 			<head>
 				<meta name='apple-mobile-web-app-title' content='Smiles' />
 			</head>
-			<body className={`${appFont.className} antialiased`}>{children}</body>
+			<body className={`${appFont.className} bg-repeat-y antialiased w-screen h-screen`}>
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
