@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Averia_Serif_Libre } from 'next/font/google';
 import './globals.css';
-import Footer from '@/components/footer';
+import Footer from '@/components/server/footer';
 
 export const metadata: Metadata = {
 	title: 'theHandMadeSmiles',
