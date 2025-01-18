@@ -15,7 +15,7 @@ export function Canvas() {
                 const canvas = canvasRef.current;
                 if (canvas) {
                     canvas.width = window.innerWidth;
-                    canvas.height = document.body.scrollHeight;
+                    canvas.height = window.innerHeight * 7.5;
                 }
             };
             // call resize() once.
